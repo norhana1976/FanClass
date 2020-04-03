@@ -4,15 +4,13 @@ public class Rectangle {
 	// state
 	private int length;
 	private int width;
-	
+
 	//creation
 	public Rectangle(int length, int width) {
 		// TODO Auto-generated constructor stub
 		this.length = length;
 		this.width = width;
 	}
-	
-	
 
 
 	public void setLength(int length) {
@@ -31,16 +29,16 @@ public class Rectangle {
 		int area = length * width;
 		return area;
 	}
-	
+
 	public int perimeter() {
 		int perimeter = 2 * (length + width);
 		return perimeter;
-		
+
 	}
-	
+
 	//operation
 	public String toString() {
-		 return String.format("length - %d width -  %d area - %d perimeter - %d",      
-				 length, width, area(), perimeter()); 
+		 return String.format("length - %d width -  %d area - %d perimeter - %d",
+				 length, width, area(), perimeter());
 	}
 }
